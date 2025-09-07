@@ -1,0 +1,133 @@
+.contact-section {
+  background-color: #130748;
+  padding: 3rem 0;
+}
+
+.contact-content {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(60, 72, 88, 0.18), 0 1.5px 6px rgba(59, 130, 246, 0.08);
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  position: relative;
+}
+
+.contact-content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(90deg, #f1f5fb 80%, #e0e7ef 100%);
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.07);
+  padding: 1rem 1.2rem;
+  font-size: 1.08rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.contact-item:hover {
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.13);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.contact-icon {
+  font-size: 1.7rem;
+  min-width: 1.7rem;
+  filter: drop-shadow(0 2px 6px rgba(59,130,246,0.13));
+  transition: transform 0.2s;
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.15) rotate(-8deg);
+}
+
+.contact-item a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contact-item a:hover {
+  color: #f43f5e;
+  text-decoration: underline;
+}
+
+.resumes-section {
+  margin-top: 2.5rem;
+  background: linear-gradient(90deg, #e0e7ef 80%, #f1f5fb 100%);
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.07);
+  padding: 1.2rem 1rem;
+}
+
+.resumes-section h3 {
+  font-size: 1.15rem;
+  color: #2563eb;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.resumes-viewers {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.resume-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.07);
+  padding: 1rem 1.2rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.resume-viewer:hover {
+  box-shadow: 0 4px 16px rgba(244, 63, 94, 0.13);
+  transform: scale(1.05);
+}
+
+.resume-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+  filter: drop-shadow(0 2px 6px rgba(59,130,246,0.13));
+  transition: transform 0.2s;
+}
+
+.resume-viewer:hover .resume-icon {
+  transform: scale(1.15) rotate(8deg);
+}
+
+.resume-viewer a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+}
+
+.resume-viewer a:hover {
+  color: #f43f5e;
+  text-

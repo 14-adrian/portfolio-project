@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+.header {
+    background: #1d1b2a;
+    color: white;
+    padding: 1rem 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.hero {
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #ff6b6b;
+    color: white;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Formal y creativo para .about-content en un portafolio */
+.about-content {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(60, 72, 88, 0.18), 0 1.5px 6px rgba(59, 130, 246, 0.08);
+  padding: 2.5rem 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-content h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.about-content h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  border-radius: 2px;
+  margin: 0.7rem auto 0;
+}
+
+.about-content p {
+  font-size: 1.15rem;
+  color: #374151;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.about-content .svg-inline--fa {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #2563eb 40%, #f43f5e 100%);
+  border-radius: 50%;
+  padding: 0.6rem;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.13);
+  transition: transform 0.2s;
+}
+
+.about-content .svg-inline--fa:hover {
+  transform: scale(1.1) rotate(-8deg);
+  box-shadow: 0 4px 16px rgba(244, 63, 94, 0.13);
+}

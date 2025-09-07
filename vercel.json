@@ -1,0 +1,28 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "public/index.php",
+            "use": "@vercel/php"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/public/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_KEY": "base64:AeA3/RbAhDXoHnQ8Ctu5faRf83N5rDv/fTgatF5jvdU=",
+        "SESSION_DRIVER": "cookie",
+        "CACHE_STORE": "array",
+        "LOG_CHANNEL": "stderr"
+    },
+    "build": {
+        "env": {
+            "APP_ENV": "production"
+        }
+    }
+}
