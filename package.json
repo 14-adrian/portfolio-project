@@ -5,8 +5,7 @@
     "scripts": {
         "build": "vite build",
         "dev": "vite",
-        "vercel-build": "npm run build",
-        "build:vercel": "npm run build"
+        "vercel-build": "npm run build"
     },
     "engines": {
         "node": ">=18.x"

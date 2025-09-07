@@ -1,14 +1,23 @@
 {
   "version": 2,
-  "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.8.0"
+  "builds": [
+    {
+      "src": "api/translations.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
     }
-  },
+  ],
   "routes": [
     {
+      "src": "/api/translations/(.*)",
+      "dest": "/api/translations.php"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/api/index.php"
+      "dest": "/public/$1"
     }
   ],
   "env": {
