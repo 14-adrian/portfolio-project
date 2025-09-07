@@ -1,7 +1,7 @@
 import React from 'react';
-import "../../css/Hero.css";
+import "../../css/hero.css";
 
-function Hero({ t }) {
+function Hero ({ t }) {
     return (
         <section className="hero">
             <div className="hero-content">
