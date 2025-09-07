@@ -49,4 +49,5 @@
 
 .footer-github:hover .footer-icon {
   color: #2563eb;
-  transform: scale(1.15) rotate(
+  transform: scale(1.15) rotate(45deg);
+}

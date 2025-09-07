@@ -122,6 +122,6 @@ html {
 }
 
 .about-content .svg-inline--fa:hover {
-  transform: scale(1.1) rotate(-8deg);
+  transform: scale(1.1) rotate(-8deg); /* ← AGREGA el ; aquí */
   box-shadow: 0 4px 16px rgba(244, 63, 94, 0.13);
 }

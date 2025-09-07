@@ -1,13 +1,16 @@
 import { defineConfig } from 'vite'
-import laravel from 'laravel-vite-plugin'
 import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 
 export default defineConfig({
-    plugins: [
-        laravel({
-            input: ['resources/js/app.js'],
-            refresh: true,
-        }),
-        react(),
-    ],
+  plugins: [react()],
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html')
+      }
+    }
+  },
+  root: '.', // Asegura que la raíz sea el directorio actual
 })

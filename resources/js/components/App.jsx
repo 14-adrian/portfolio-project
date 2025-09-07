@@ -7,8 +7,9 @@ import Skills from './Skills';
 import Contact from './Contact';
 import Footer from './Footer';
 import { useLanguage } from '../hooks/useLanguage';
+//import '../../css/app.css'; // Importar CSS
 
-function App() {
+function App () {
     const { t, currentLanguage, switchLanguage } = useLanguage();
 
     return React.createElement('div', { className: 'app' },
