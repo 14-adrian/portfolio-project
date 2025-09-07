@@ -34,7 +34,7 @@ export default function Projects ({ t }) {
           {t("projectsTitle") || "Projects"}
         </h2>
         <p style={{ color: "white", textAlign: "center" }}>
-          {t("projectsDescription") || "Here are some of my projects"}
+          
         </p>
       </div>
       <div
