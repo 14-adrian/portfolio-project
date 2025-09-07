@@ -3,9 +3,9 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
         "dev": "vite",
-        "vercel-build": "npm run build"
+        "build": "vite build && npm run generate-translations",
+        "generate-translations": "node scripts/generate-translations.js"
     },
     "engines": {
         "node": ">=18.x"

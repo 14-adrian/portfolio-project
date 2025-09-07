@@ -10,9 +10,10 @@ export const useLanguage = () => {
 
     const loadTranslations = async (lang) => {
         try {
-            const response = await fetch(`/api/translations/${lang}`);
-            const data = await response.json();
-            setTranslations(data);
+            // Cargar desde archivo estático
+            const response = await fetch('/translations.json');
+            const allTranslations = await response.json();
+            setTranslations(allTranslations[lang] || {});
         } catch (error) {
             console.error('Error loading translations:', error);
         }

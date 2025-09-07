@@ -2,27 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/translations.php",
-      "use": "@vercel/php"
-    },
-    {
       "src": "public/**/*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/api/translations/(.*)",
-      "dest": "/api/translations.php"
-    },
-    {
       "src": "/(.*)",
       "dest": "/public/$1"
     }
-  ],
-  "env": {
-    "APP_ENV": "production",
-    "APP_DEBUG": "false",
-    "APP_KEY": "base64:AeA3/RbAhDXoHnQ8Ctu5faRf83N5rDv/fTgatF5jvdU="
-  }
+  ]
 }
