@@ -10,4 +10,8 @@ export default defineConfig({
         }),
         react(),
     ],
+    build: {
+        outDir: 'public', // ← Build en public/
+        emptyOutDir: true, // ← Limpiar public/ antes de build
+    }
 })
