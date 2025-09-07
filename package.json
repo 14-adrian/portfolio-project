@@ -5,7 +5,11 @@
     "scripts": {
         "build": "vite build",
         "dev": "vite",
-        "build:vercel": "npm run build && php artisan optimize:clear"
+        "build:vercel": "npm run build && php artisan optimize:clear",
+        "vercel-build": "npm run build:vercel"
+    },
+    "engines": {
+        "node": ">=18.x"
     },
     "devDependencies": {
         "@babel/plugin-transform-react-jsx": "^7.27.1",
