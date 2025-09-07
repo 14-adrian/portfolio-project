@@ -5,8 +5,8 @@
     "scripts": {
         "build": "vite build",
         "dev": "vite",
-        "build:vercel": "npm run build && php artisan optimize:clear",
-        "vercel-build": "npm run build:vercel"
+        "vercel-build": "npm run build",
+        "build:vercel": "npm run build"
     },
     "engines": {
         "node": ">=18.x"
